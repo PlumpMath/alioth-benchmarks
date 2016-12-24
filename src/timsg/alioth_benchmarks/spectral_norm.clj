@@ -5,7 +5,7 @@
 ;; provided by Alex Miller
 
 (ns timsg.alioth-benchmarks.spectral-norm
-  (:require [arcadia.internal.thread :as thr])
+  ;;(:require [arcadia.internal.thread :as thr])
   (:import [timsg.alioth_benchmarks BarrierHandle]
            ;;[java.util.concurrent CyclicBarrier]
            [clojure.lang Numbers]
