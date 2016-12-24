@@ -1,14 +1,16 @@
 # timsg.alioth-benchmarks
 
-A Clojure library designed to ... well, that part is up to you.
+```clojure
+(require 'timsg.alioth-benchmarks.spectral-norm)
+(in-ns 'timsg.alioth-benchmarks.spectral-norm)
+(import [timsg.alioth_benchmarks SpectralNorm])
 
-## Usage
+(time
+  (SpectralNorm/Main (make-array String 0)))
 
-FIXME
+;; ~1075-1095
 
-## License
+(time (-main))
 
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+;; ~526 
+```
